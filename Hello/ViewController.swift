@@ -20,6 +20,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func tapMeButtonTapped(sender: UIButton) {
+        print("hello!!!")
+    }
 }
 
