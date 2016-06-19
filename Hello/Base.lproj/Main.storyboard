@@ -17,23 +17,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uti-Hu-YQP">
-                                <rect key="frame" x="249" y="285" width="103" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uti-Hu-YQP">
+                                <rect key="frame" x="249" y="310" width="103" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="103" id="lDh-iI-pgz"/>
+                                    <constraint firstAttribute="width" constant="103" id="8Fi-D7-dVf"/>
                                 </constraints>
                                 <state key="normal" title="Tap Me"/>
                                 <connections>
                                     <action selector="tapMeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Bj-ER-a4O"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hi!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nky-AM-jYw">
+                                <rect key="frame" x="252" y="260" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="QCR-eG-81U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="uti-Hu-YQP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dAq-AC-Lly"/>
-                            <constraint firstItem="uti-Hu-YQP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tiZ-uf-q5N"/>
+                            <constraint firstItem="nky-AM-jYw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ASf-uX-jbs"/>
+                            <constraint firstItem="nky-AM-jYw" firstAttribute="centerX" secondItem="uti-Hu-YQP" secondAttribute="centerX" id="WrM-C3-yp8"/>
+                            <constraint firstItem="uti-Hu-YQP" firstAttribute="top" secondItem="nky-AM-jYw" secondAttribute="bottom" constant="20" id="gcy-Eq-Xea"/>
+                            <constraint firstItem="nky-AM-jYw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="240" id="q4E-x1-8sB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloTextField" destination="nky-AM-jYw" id="8ny-Iq-XCh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

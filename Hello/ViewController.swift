@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var helloTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,7 +23,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func tapMeButtonTapped(sender: UIButton) {
-        print("hello!!!")
+        helloTextField.text = "Hello!"
+        helloTextField.textColor = UIColor.redColor()
     }
 }
 
