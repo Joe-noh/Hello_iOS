@@ -77,6 +77,7 @@
 		D89F958E1D1ADB2700E43D87 /* Hello */ = {
 			isa = PBXGroup;
 			children = (
+				D89F95AF1D1AE0A500E43D87 /* classes */,
 				D89F958F1D1ADB2700E43D87 /* AppDelegate.swift */,
 				D89F95911D1ADB2700E43D87 /* ViewController.swift */,
 				D89F95931D1ADB2700E43D87 /* Main.storyboard */,
@@ -94,6 +95,45 @@
 				D89F95A61D1ADB2800E43D87 /* Info.plist */,
 			);
 			path = HelloTests;
+			sourceTree = "<group>";
+		};
+		D89F95AF1D1AE0A500E43D87 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				D89F95B31D1AF0BA00E43D87 /* Presenters */,
+				D89F95B21D1AF0B400E43D87 /* Models */,
+				D89F95B11D1AF09700E43D87 /* ViewProtocols */,
+				D89F95B01D1AE0AF00E43D87 /* Views */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+		D89F95B01D1AE0AF00E43D87 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D89F95B11D1AF09700E43D87 /* ViewProtocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewProtocols;
+			sourceTree = "<group>";
+		};
+		D89F95B21D1AF0B400E43D87 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D89F95B31D1AF0BA00E43D87 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,6 +428,7 @@
 				D89F95AB1D1ADB2800E43D87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D89F95AC1D1ADB2800E43D87 /* Build configuration list for PBXNativeTarget "HelloTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +437,7 @@
 				D89F95AE1D1ADB2800E43D87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
