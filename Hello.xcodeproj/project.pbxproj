@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2B971D481D1B682500AD8E5F /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B971D471D1B682500AD8E5F /* HelloViewController.swift */; };
+		2B971D4A1D1B69A200AD8E5F /* HelloPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B971D491D1B69A200AD8E5F /* HelloPresenter.swift */; };
+		2B971D4C1D1B69E200AD8E5F /* HelloViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B971D4B1D1B69E200AD8E5F /* HelloViewProtocol.swift */; };
+		2B971D4E1D1B717200AD8E5F /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B971D4D1D1B717200AD8E5F /* Counter.swift */; };
 		D89F95901D1ADB2700E43D87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89F958F1D1ADB2700E43D87 /* AppDelegate.swift */; };
 		D89F95951D1ADB2700E43D87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89F95931D1ADB2700E43D87 /* Main.storyboard */; };
 		D89F95971D1ADB2700E43D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89F95961D1ADB2700E43D87 /* Assets.xcassets */; };
@@ -27,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		2B971D471D1B682500AD8E5F /* HelloViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelloViewController.swift; path = Classes/ViewControllers/HelloViewController.swift; sourceTree = "<group>"; };
+		2B971D491D1B69A200AD8E5F /* HelloPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelloPresenter.swift; path = Classes/Presenters/HelloPresenter.swift; sourceTree = "<group>"; };
+		2B971D4B1D1B69E200AD8E5F /* HelloViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelloViewProtocol.swift; path = Classes/ViewProtocols/HelloViewProtocol.swift; sourceTree = "<group>"; };
+		2B971D4D1D1B717200AD8E5F /* Counter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Counter.swift; path = Classes/Models/Counter.swift; sourceTree = "<group>"; };
 		D89F958C1D1ADB2700E43D87 /* Hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89F958F1D1ADB2700E43D87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D89F95941D1ADB2700E43D87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 		D89F95B11D1AF09700E43D87 /* ViewProtocols */ = {
 			isa = PBXGroup;
 			children = (
+				2B971D4B1D1B69E200AD8E5F /* HelloViewProtocol.swift */,
 			);
 			name = ViewProtocols;
 			sourceTree = "<group>";
@@ -125,6 +132,7 @@
 		D89F95B21D1AF0B400E43D87 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2B971D4D1D1B717200AD8E5F /* Counter.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 		D89F95B31D1AF0BA00E43D87 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				2B971D491D1B69A200AD8E5F /* HelloPresenter.swift */,
 			);
 			name = Presenters;
 			sourceTree = "<group>";
@@ -237,8 +246,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B971D4E1D1B717200AD8E5F /* Counter.swift in Sources */,
+				2B971D4A1D1B69A200AD8E5F /* HelloPresenter.swift in Sources */,
 				2B971D481D1B682500AD8E5F /* HelloViewController.swift in Sources */,
 				D89F95901D1ADB2700E43D87 /* AppDelegate.swift in Sources */,
+				2B971D4C1D1B69E200AD8E5F /* HelloViewProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

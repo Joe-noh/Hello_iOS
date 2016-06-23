@@ -27,6 +27,9 @@
                                 <rect key="frame" x="260" y="246" width="80" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Tap Me"/>
+                                <connections>
+                                    <action selector="tapMeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cGq-YF-syd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
